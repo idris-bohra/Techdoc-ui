@@ -1,0 +1,31 @@
+@import '../../../components/main/variables.scss';
+
+.heading-main {
+  box-sizing: border-box;
+  span {
+    white-space: wrap;
+
+    &:hover {
+      color: $on-this-page-hover-color;
+    }
+  }
+}
+
+.content-heading {
+  font-size: 13px;
+}
+
+.table-content-heading {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.content-heading {
+  &:hover {
+    background-color: $button-background-hover;
+    padding: 0.5px;
+    border-radius: 3px;
+  }
+}

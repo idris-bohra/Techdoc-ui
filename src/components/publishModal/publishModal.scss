@@ -1,0 +1,50 @@
+.value {
+  width: 150px;
+}
+.text {
+  width: 220px;
+}
+
+.text-container {
+  width: 320px;
+  box-shadow: rgba(55, 53, 47, 0.09) 0px -1px 0px inset;
+  // border-radius: ;
+}
+.custom-input-wrapper {
+  box-shadow: rgba(55, 53, 47, 0.09) 0px -1px 0px inset;
+}
+.view-site {
+  border: none !important;
+}
+.custom-tooltip {
+  max-width: 250px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.publish-view-site-btn {
+  .view-site-btn {
+    &:hover {
+      background-color: var(--background-color-dark-blue) !important;
+      color: var(--text-color-white) !important;
+    }
+  }
+
+  .view-site {
+    color: var(--text-color-white) !important;
+  }
+
+  .publish-btn {
+    background-color: var(--background-color-primary) !important;
+
+    &:hover {
+      color: var(--text-color-white) !important;
+    }
+  }
+}
+
+.disabled-input {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

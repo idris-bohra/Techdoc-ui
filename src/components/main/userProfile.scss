@@ -1,0 +1,127 @@
+.org-listing-container {
+  height: auto;
+
+  .org-listing-column {
+    border-radius: 4px;
+    font-size: 14px;
+
+    .org-listing-button {
+      height: 28px !important;
+      text-transform: capitalize;
+      font-weight: 500 !important;
+      font-size: 14px !important;
+      transition: background-color 0.3s ease-in;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(55, 53, 47);
+    }
+  }
+}
+
+.avatar-org {
+  display: flex;
+  background: rgba(55, 53, 47, 0.09) !important;
+  color: rgba(55, 53, 47, 0.65) !important;
+  text-transform: uppercase;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.leave-icon {
+  color: rgb(224 9 9);
+}
+
+.name-list {
+  transition: background-color 0.3s ease;
+
+  .org-collection-name {
+    width: calc(100% - 35px);
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+
+    .leave-icon {
+      visibility: visible !important;
+    }
+  }
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.invite-user {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .members {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(145, 145, 145);
+    padding-left: 10px;
+  }
+}
+
+.profile-details {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .trash {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(145, 145, 145);
+    padding-left: 10px;
+  }
+}
+
+.collection {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .add-collection {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(145, 145, 145);
+    padding-left: 10px;
+  }
+}
+
+.logout {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+  padding-left: 10px;
+}
+
+.chip {
+  font-size: 7px;
+  border-radius: 2px;
+  padding: 2px 8px;
+}
+
+//Sidebar Open and Close Icon
+.menu-trigger-box {
+  .sidebar-close-icon {
+    visibility: hidden !important;
+  }
+
+  &:hover {
+    .sidebar-close-icon {
+      visibility: visible !important;
+    }
+  }
+}

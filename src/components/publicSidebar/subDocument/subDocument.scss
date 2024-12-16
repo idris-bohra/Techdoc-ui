@@ -1,0 +1,30 @@
+@import '../../../components/main/variables.scss';
+
+.show-subdoc-bold {
+  font-weight: 500;
+  color: #017fdc;
+  background-color: rgba(1, 142, 245, 0.09);
+}
+
+.sub-doc-container {
+  border-radius: 4px;
+  > div {
+    height: fit-content;
+  }
+
+  &:hover {
+    .show-version-dropdown {
+      display: block;
+    }
+    .public-arrow-icon {
+      color: black;
+    }
+    color: black;
+    font-weight: 500;
+    background-color: #f8f8f8;
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}

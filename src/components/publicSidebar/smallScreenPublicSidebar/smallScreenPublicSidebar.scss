@@ -1,0 +1,25 @@
+.small-screen-header {
+  @media screen and (max-width: 768px) {
+    display: flex !important;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+.small-screen-sidebar-contianer {
+  @media screen and (max-width: 768px) {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: none !important;
+  }
+}

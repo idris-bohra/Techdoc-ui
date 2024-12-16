@@ -1,0 +1,5 @@
+const SIDEBAR_OPEN_STATE = 'SIDEBAR_OPEN_STATE';
+
+export default {
+  SIDEBAR_OPEN_STATE,
+};

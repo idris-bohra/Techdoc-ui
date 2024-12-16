@@ -1,0 +1,18 @@
+.feedback-popup {
+  .feedback-content {
+    .form-control {
+      height: unset !important;
+    }
+  }
+}
+
+.enpoint-title {
+  > :first-child {
+    border-radius: 8px;
+  }
+
+  .like-btn,
+  .dislike-btn {
+    color: var(--icon-color-grey);
+  }
+}

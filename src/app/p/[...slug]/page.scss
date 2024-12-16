@@ -1,0 +1,58 @@
+.navbar-public,
+.public-footer,
+.high-width-sidebar {
+  @media screen and (max-width: 768px) {
+    z-index: 9999;
+    display: none !important;
+  }
+}
+
+.sidebar-small-container-width {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.responsive-padding {
+  @media screen and (max-width: 768px) {
+    padding-block: 0px !important;
+  }
+}
+
+.screen-public-sidebar-container {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navbar-public {
+  top: 0;
+  z-index: 5;
+}
+
+.navbar-public {
+  top: 0;
+  z-index: 5;
+}
+
+.hover-box-container {
+  max-width: 280px;
+  min-width: 280px;
+  background-color: white;
+  overflow: auto;
+  scrollbar-width: thin;
+  max-height: calc(100vh - 40px);
+  position: sticky;
+  top: 24px;
+  color: #00000099;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1299px) {
+    display: none;
+  }
+}
+
+.navbar-public {
+  top: 0;
+  z-index: 5;
+}

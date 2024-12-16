@@ -1,0 +1,43 @@
+@import '../../../components/main/variables.scss';
+
+.show-doc-bold {
+  font-weight: 500;
+  color: #017fdc;
+  background-color: rgba(1, 142, 245, 0.09);
+}
+
+.show-version-dropdown {
+  display: none;
+
+  .version-dropdown-selected-name {
+    font-size: 12px;
+    color: #00000099;
+  }
+
+  .dropdown {
+    color: black;
+  }
+}
+
+.parent-doc-container {
+  border-radius: 4px;
+  > div {
+    height: fit-content;
+  }
+
+  &:hover {
+    background-color: #f8f8f8;
+    .show-version-dropdown {
+      display: block;
+    }
+    .public-arrow-icon {
+      color: black;
+    }
+    color: black;
+    font-weight: 500;
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}

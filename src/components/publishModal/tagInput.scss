@@ -1,0 +1,52 @@
+.tag-input-container {
+  position: relative;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition:
+    border-color 0.3s ease,
+    height 0.3s ease;
+
+  &.focused {
+    border: 1px solid rgba(11, 10, 10, 0.57);
+  }
+  &.expanded {
+    min-height: 80px;
+  }
+
+  .floating-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    color: #aaa;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    transform: translateY(-50%);
+  }
+
+  .floating-label.active {
+    top: -4px;
+    left: 0px;
+    font-size: 12px;
+    color: #6c757d;
+  }
+
+  .tag-list {
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .tag {
+    display: inline-flex;
+    background-color: #e0e0e0;
+    border-radius: 16px;
+  }
+
+  .tag-input-field {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,115 @@
+.fs-16 {
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview {
+  border: #333;
+  border-radius: 10px;
+}
+
+.box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.textblock {
+  color: #212121;
+  line-height: 1;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.preview-block {
+  border: 2px solid #ccc;
+  padding: 20px;
+  min-height: 40px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.preview-content {
+  transform: scale(0.6);
+  transform-origin: top left;
+  width: 166.67%;
+}
+
+.box h3 {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.ace_editor {
+  border-radius: 4px;
+}
+
+.live-preview {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.live-preview h2 {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.live-preview div {
+  //   font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.customized-header-footer-model {
+  max-width: 90vw !important;
+  height: 95vh !important;
+  padding: 2rem;
+  .modal-content {
+    height: 100%;
+    .modal-body {
+      padding: 6px 26px !important;
+      .wrapper {
+        .editor {
+          .tab-content {
+            flex-grow: 1;
+            #html_editor {
+              height: 100% !important;
+            }
+            .header-section {
+              background-color: unset !important;
+            }
+            .grid-wrapper {
+              display: grid;
+              gap: 20px;
+              grid-template-columns: 1fr 1fr;
+
+              @media screen and (width <= 992px) {
+                grid-template-columns: 1fr;
+                .box {
+                  grid-row: span 3;
+                }
+              }
+            }
+          }
+        }
+        .close-btn {
+          transform: translateX(25%);
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

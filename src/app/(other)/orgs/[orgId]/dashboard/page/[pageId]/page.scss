@@ -1,0 +1,102 @@
+@use '../../../../../../components/main/variables.scss' as *;
+
+// ... existing code ...
+.parent-page-container {
+  .page-header {
+    top: 0;
+    z-index: 9;
+
+    .header-page-name {
+      padding: 0px !important;
+      margin: 0px !important;
+
+      strong {
+        border-radius: 2px;
+        &:not(:last-child) {
+          max-width: 120px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        &:hover {
+          background-color: $button-background-hover;
+        }
+
+        &:last-child {
+          &:focus-visible {
+            outline: 1px solid rgba(128, 128, 128, 0.356);
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    .inner-operations {
+      .dropdown {
+        .cmd-icons {
+          margin: 0 3px 2px 0;
+        }
+        .dropdown-toggle {
+          &::after {
+            all: unset;
+          }
+
+          svg {
+            color: rgba(55, 53, 47, 0.85);
+          }
+        }
+
+        .unpublish-btn {
+          color: rgb(235, 87, 87);
+        }
+
+        .disable-unpublish {
+          color: rgb(235, 87, 87, 0.5);
+        }
+
+        .unpublish-page {
+          &:hover {
+            background-color: $alert-color;
+            span {
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .page-container {
+    max-width: 800px;
+    margin-bottom: 30vh;
+
+    textarea {
+      resize: none;
+      min-height: 50px;
+      max-height: 300px;
+      font-size: 40px;
+      &:focus {
+        outline: unset;
+      }
+    }
+
+    @media screen and (max-width: 1500px) {
+      max-width: 700px;
+    }
+  }
+}
+
+.live-tooltip {
+  font-size: 10px;
+}
+.publish-loader {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.publish-spinner {
+  color: #6c757d;
+  width: 1rem;
+  height: 1rem;
+}

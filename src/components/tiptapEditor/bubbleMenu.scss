@@ -1,0 +1,41 @@
+.upload-modal {
+  .favicon-uploader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .form-control {
+    width: calc(100% - 100px);
+    flex: 1;
+  }
+
+  .font-icon {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+
+  .custom-or {
+    margin-left: 10px;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .text-muted {
+    color: #6c757d;
+  }
+
+  .mr-3 {
+    margin-right: 20px;
+  }
+}

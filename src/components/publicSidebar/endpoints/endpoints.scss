@@ -1,0 +1,55 @@
+@import '../../../components/main/variables.scss';
+
+.POST {
+  color: green;
+  font-size: 9px;
+}
+
+.GET {
+  color: orange;
+  font-size: 9px;
+}
+
+.DELETE {
+  color: red;
+  font-size: 9px;
+}
+
+.PUT {
+  color: #cca027;
+  font-size: 9px;
+}
+
+.PATCH {
+  color: #ce6529;
+  font-size: 9px;
+}
+
+.show-endpoint-bold {
+  color: #017fdc;
+  background-color: rgba(1, 142, 245, 0.09);
+}
+
+.public-endpoint-main-container {
+  max-width: 1140px;
+  width: 1140px;
+
+  &:hover {
+    background-color: #f8f8f8;
+
+    .show-version-dropdown {
+      display: block;
+    }
+
+    .public-arrow-icon {
+      color: black;
+    }
+
+    color: black;
+    font-weight: 500;
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}

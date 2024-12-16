@@ -1,0 +1,56 @@
+@import '../../../components/main/variables.scss';
+
+.public-sidebar-input {
+  color: rgba(128, 128, 128, 0.7) !important;
+}
+
+.public-search-modal {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+.break-line {
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  margin: 10px 0;
+}
+
+.search-text {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  text-wrap: wrap;
+}
+
+.search-content-container {
+  overflow: hidden;
+  text-wrap: wrap;
+
+  &:hover {
+    background-color: $button-background-hover;
+  }
+}
+
+.loading {
+  .bg {
+    min-width: 200px;
+    width: 95%;
+  }
+}
+
+.active-search-content {
+  background-color: $button-background-hover;
+}
+
+.options-container {
+  color: gray;
+
+  .selected {
+    color: black;
+  }
+}
+
+.public-search-container {
+  z-index: 2;
+}

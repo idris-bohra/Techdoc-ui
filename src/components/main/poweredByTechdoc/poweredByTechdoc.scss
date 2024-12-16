@@ -1,0 +1,35 @@
+// .footerWrapper {
+//   position: relative;
+
+//   .confetti-wrap {
+//     user-select: none;
+//     position: relative;
+
+//     .fetti {
+//       position: absolute;
+//       width: 10px;
+//       height: 10px;
+//       border-radius: 50%;
+//     }
+
+//     > :first-child {
+//       > :first-child {
+//         color: var(--icon-color-grey);
+//       }
+
+//       .powered-techdoc {
+//         color: var(--text-color-orange);
+//       }
+//     }
+//   }
+// }
+
+.footerWrapper {
+  p {
+    color: var(--icon-color-grey);
+  }
+
+  .powered-techdoc {
+    color: var(--text-color-orange);
+  }
+}
